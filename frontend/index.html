@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🏠 House Price Prediction</h1>
+
+        <input type="number" id="area" placeholder="Carpet Area (sqft)">
+
+        <input type="number" id="floor" placeholder="Floor Number">
+
+        <input type="number" id="bathroom" placeholder="Bathrooms">
+
+        <input type="number" id="balcony" placeholder="Balconies">
+
+        <select id="location">
+            <option>Select Location</option>
+        </select>
+
+        <select id="furnishing">
+            <option>Semi-Furnished</option>
+            <option>Furnished</option>
+            <option>Unfurnished</option>
+        </select>
+
+        <select id="transaction">
+            <option>Resale</option>
+            <option>New Property</option>
+        </select>
+
+        <select id="ownership">
+            <option>Freehold</option>
+            <option>Leasehold</option>
+            <option>Co-operative Society</option>
+            <option>Power Of Attorney</option>
+        </select>
+
+        <select id="facing">
+            <option>East</option>
+            <option>West</option>
+            <option>North</option>
+            <option>South</option>
+        </select>
+
+        <button onclick="predictPrice()">
+            Predict Price
+        </button>
+
+        <h2 id="result"></h2>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
